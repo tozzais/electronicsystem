@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progress_error_layout_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/progress_error_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="加载失败"
+        android:textSize="16sp"
+        android:textColor="@color/grayText"/>
+
+    <TextView
+        android:id="@+id/progress_error_btn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_error_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:gravity="center"
+        android:text="重试"
+        android:textColor="@color/grayText"
+        android:background="@drawable/shape_line_gray5"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="70dp"
+      android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:paddingTop="5dp"
+          android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:text="29%"/>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="10dp"
+              android:background="#515181"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:text="综合整治"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:text="36%"/>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="10dp"
+              android:background="#5f78f8"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:text="水系调整"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:text="41%"/>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="10dp"
+              android:background="#00d6f6"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:text="清淤疏浚"/>
+
+        </LinearLayout>
+      </LinearLayout>
+
+      <com.gaocheng.baselibrary.widget.chart.RemediationColumn
+          android:layout_width="match_parent"
+          android:gravity="center"
+          android:layout_height="match_parent"
+          app:remediationColumn_tag = "完成整治"
+          />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:paddingTop="5dp"
+          android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:text="29%"/>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="10dp"
+              android:background="#515181"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:text="综合整治"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:text="36%"/>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="10dp"
+              android:background="#5f78f8"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:text="水系调整"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:text="41%"/>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="10dp"
+              android:background="#00d6f6"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="12sp"
+              android:text="清淤疏浚"/>
+
+        </LinearLayout>
+      </LinearLayout>
+
+      <com.gaocheng.baselibrary.widget.chart.RemediationColumn
+          android:layout_width="match_parent"
+          android:gravity="center"
+          android:layout_height="match_parent"
+          app:remediationColumn_tag = "正在整治"
+          />
+    </RelativeLayout>
+
+  </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

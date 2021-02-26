@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <View
+        style="@style/horizontal_space"/>
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_town_name"
+            android:textSize="16sp"
+            android:textColor="@color/title_textcolor"
+            android:textStyle="bold"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="七宝镇"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_community_name"
+                    android:textSize="16sp"
+                    android:textColor="@color/title_textcolor"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:layout_height="wrap_content"
+                    tools:text="小区:世博家园街坊"
+                    />
+                <TextView
+                    android:id="@+id/tv_community_mixing"
+                    android:textSize="16sp"
+                    android:textColor="@color/yellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="(有混接)"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_community_address"
+                android:textSize="16sp"
+                android:textColor="@color/title_textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="地址:浦南路53弄"
+                />
+
+            <TextView
+                android:id="@+id/tv_overview"
+                android:textSize="16sp"
+                android:textColor="@color/title_textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="概况:1989年建成，面积73000平方"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_look_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_gray_down"
+            android:layout_gravity="center"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+
+
+     <View
+         style="@style/line"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/more_bg"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_vertical"
+                tools:background="@mipmap/add_image"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_sewage_estination"
+                    android:textSize="14sp"
+                    android:textColor="@color/black_shadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="污水去向："
+                    android:lines="1"
+                    android:ellipsize="end"
+                    />
+                <TextView
+                    android:id="@+id/tv_rainfall"
+                    android:textSize="14sp"
+                    android:textColor="@color/black_shadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="雨水去向："
+                    android:lines="1"
+                    android:ellipsize="end"
+                    />
+                <TextView
+                    android:id="@+id/tv_coordinate"
+                    android:textSize="14sp"
+                    android:textColor="@color/black_shadow"
+                    android:layout_width="wrap_content"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:layout_height="wrap_content"
+                    tools:text="坐标：X:2364.24 Y:24116.21"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_remarks"
+                    android:textSize="14sp"
+                    android:textColor="@color/black_shadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    tools:text="备注:"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>

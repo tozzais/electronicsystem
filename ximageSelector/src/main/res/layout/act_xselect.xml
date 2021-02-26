@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4d4d4d"
+    android:fitsSystemWindows="true"
+    tools:context=".imageView.XSelectAct">
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/rl_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4d4d4d"
+        android:paddingBottom="25px"
+        android:paddingTop="25px">
+
+        <!--返回的返回剪头和文字-->
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_back"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10px"
+                android:src="@mipmap/back_icon"
+                app:layout_auto_basewidth="width|height" />
+
+            <TextView
+                android:id="@+id/tv_back_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_back"
+                android:text="图片"
+                android:textColor="@color/white"
+                android:textScaleX="1.1"
+                android:textSize="24px" />
+
+        </RelativeLayout>
+
+        <!--显示中间标题的文本-->
+        <TextView
+            android:id="@+id/tv_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="全部图片"
+            android:textColor="@color/white"
+            android:textScaleX="1.1"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="140px"
+            android:layout_height="54px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:gravity="center"
+            android:paddingLeft="3px"
+            android:paddingRight="3px"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="22px" />
+
+    </RelativeLayout>
+
+    <!--展示图片-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/rl_foot_menu"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:layout_below="@+id/rl_titlebar"
+        android:background="@color/black" />
+
+    <!--底部的提示菜单-->
+    <RelativeLayout
+        android:id="@+id/rl_foot_menu"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_alignParentBottom="true"
+        android:background="#CC4d4d4d">
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:minWidth="100px"
+            android:paddingLeft="24px"
+            android:text="全部图片"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4px"
+            android:layout_toRightOf="@+id/tv_tip"
+            android:src="@mipmap/image1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!--取消选中的文本-->
+            <TextView
+                android:id="@+id/tv_cancel_select"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16px"
+                android:gravity="center"
+                android:text="取消选择"
+                android:textColor="@color/white"
+                android:textSize="24px"
+                android:visibility="visible" />
+
+            <!--分割线-->
+            <View
+                android:id="@+id/view_split_line"
+                android:layout_width="1dp"
+                android:layout_height="36px"
+                android:background="@color/raven" />
+
+            <!--预览的文本-->
+            <TextView
+                android:id="@+id/tv_preview"
+                android:layout_width="140px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="24px"
+                android:paddingRight="24px"
+                android:text="预览"
+                android:textColor="@color/white"
+                android:textSize="24px" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

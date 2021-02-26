@@ -1,0 +1,62 @@
+if (rootProject.ext.isAlone) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion rootProject.ext.COMPILE_SDK_VERSION
+    buildToolsVersion rootProject.ext.BUILD_TOOL_VERSION
+    defaultConfig {
+        minSdkVersion rootProject.ext.MIN_SDK_VERISON
+        targetSdkVersion rootProject.ext.TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        ndk {
+            //不然mapview找不到
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+
+        //阿里路由框架
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ AROUTER_MODULE_NAME : project.getName() ]
+            }
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            //控制两种模式下的资源和代码配置情况
+            if (rootProject.ext.isAlone) {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/module/AndroidManifest.xml'
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    testImplementation rootProject.ext.testJunit
+    androidTestImplementation rootProject.ext.testRunner
+    androidTestImplementation rootProject.ext.testEspresso
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation rootProject.ext.butterknife
+    annotationProcessor rootProject.ext.butterknifeProcessor
+
+    implementation project(':baselibrary')
+    annotationProcessor  rootProject.ext.arouterCompiler
+}

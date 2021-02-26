@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gaocheng.riversystem.RiverMainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/LightGrey"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_basic_message"
+            style="@style/HomeTab">
+
+            <ImageView
+                android:id="@+id/iv_sell"
+                style="@style/HomeTabImageStyle"
+                android:src="@mipmap/basic_information" />
+
+            <TextView
+                android:id="@+id/tv_sell"
+                style="@style/MainTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/activity_main_basic_info"
+                android:textColor="@color/baseColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_secondCart"
+            style="@style/HomeTab">
+
+            <ImageView
+                android:id="@+id/iv_secondCart"
+                style="@style/HomeTabImageStyle"
+                android:src="@mipmap/transform" />
+
+            <TextView
+                android:id="@+id/tv_secondCart"
+                style="@style/MainTextStyle"
+                android:layout_marginTop="4dp"
+                android:text="@string/activity_main_regulation_info"
+                android:textColor="@color/grayText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_newCart"
+            style="@style/HomeTab">
+
+            <ImageView
+                android:id="@+id/iv_newCart"
+                style="@style/HomeTabImageStyle"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/gis" />
+
+            <TextView
+                android:id="@+id/tv_newCart"
+                style="@style/MainTextStyle"
+                android:layout_marginTop="4dp"
+                android:text="@string/activity_main_gis_info"
+                android:textColor="@color/grayText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mine"
+            style="@style/HomeTab">
+
+            <ImageView
+                android:id="@+id/iv_mine"
+                style="@style/HomeTabImageStyle"
+                android:src="@mipmap/statis" />
+
+            <TextView
+                android:id="@+id/tv_mine"
+                style="@style/MainTextStyle"
+                android:layout_marginTop="4dp"
+                android:text="@string/activity_main_statistics_info"
+                android:textColor="@color/grayText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_message_query"
+            style="@style/HomeTab">
+
+            <ImageView
+                android:id="@+id/iv_message_query"
+                style="@style/HomeTabImageStyle"
+                android:src="@mipmap/message_query" />
+
+            <TextView
+                android:id="@+id/tv_message_query"
+                style="@style/MainTextStyle"
+                android:layout_marginTop="4dp"
+                android:text="@string/activity_main_inquiry_info"
+                android:textColor="@color/grayText" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

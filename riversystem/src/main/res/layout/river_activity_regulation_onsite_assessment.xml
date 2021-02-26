@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_onsite_assessment"
+        android:visibility="gone"
+        style="@style/ll_style">
+
+        <TextView
+            style="@style/ll_title_text_style"
+            android:text="@string/activity_regulation_assessment" />
+
+        <TextView
+            android:id="@+id/tv_onsite_assessment"
+            style="@style/ll_content_text_style"
+            android:text="@string/activity_regulation_pleaseChoose" />
+
+        <ImageView style="@style/ll_image_style" />
+
+    </LinearLayout>
+
+
+    <View style="@style/line" />
+
+    <EditText
+        android:id="@+id/tv_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/activity_regulation_describe"
+        android:minHeight="60dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:textSize="14sp" />
+
+    <View style="@style/line" />
+
+    <EditText
+        android:id="@+id/tv_suggest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/activity_regulation_suggest"
+        android:minHeight="60dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:textSize="14sp" />
+
+    <View style="@style/line" />
+
+    <TextView
+        style="@style/ll_content_text_style"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:text="@string/activity_regulation_upload_image" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <include layout="@layout/layout_bottom_detail"></include>
+
+</LinearLayout>
+

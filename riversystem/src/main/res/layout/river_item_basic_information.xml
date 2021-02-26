@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?><!--河道管理基本信息-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View style="@style/horizontal_space" />
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/tv_town_name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/title_textcolor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="@string/item_basic_town_name" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_river_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@color/title_textcolor"
+                    android:textSize="16sp"
+                    tools:text="@string/item_basic_river_name" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title_textcolor"
+                android:textSize="16sp"
+                tools:text="@string/item_basic_control" />
+
+            <TextView
+                android:id="@+id/tv_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title_textcolor"
+                android:textSize="16sp"
+                tools:text="@string/item_basic_length" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_look_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:src="@mipmap/arrow_gray_down" />
+    </LinearLayout>
+
+    <View style="@style/line" />
+
+    <LinearLayout
+        android:id="@+id/ll_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/more_bg"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="2dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                tools:background="@mipmap/ic_default_image" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_flow_town"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_shadow"
+                        android:textSize="15sp"
+                        tools:text="@string/item_basic_flow_town" />
+
+                    <TextView
+                        android:id="@+id/tv_cross"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_shadow"
+                        android:textSize="15sp"
+                        tools:text="@string/item_basic_cross" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_shrink"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_shadow"
+                        android:textSize="15sp"
+                        tools:text="@string/item_basic_shrink" />
+
+                    <TextView
+                        android:id="@+id/tv_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_shadow"
+                        android:textSize="15sp"
+                        tools:text="面积(㎡):3780.513214" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_pump_name"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_shadow"
+                        android:textSize="15sp"
+                        tools:text="@string/item_basic_pump_name" />
+
+                    <TextView
+                        android:id="@+id/tv_remarks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/black_shadow"
+                        android:textSize="15sp"
+                        tools:text="@string/item_basic_remarks" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/tv_look_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/arrow_green_right"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="@string/item_basic_look_pic"
+            android:textColor="@color/baseColor"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <View style="@style/line" />
+    </LinearLayout>
+
+
+</LinearLayout>

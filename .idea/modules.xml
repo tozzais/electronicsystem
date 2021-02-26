@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/electronicsystem.iml" filepath="$PROJECT_DIR$/electronicsystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MPChartLib/electronicsystem.MPChartLib.iml" filepath="$PROJECT_DIR$/.idea/modules/MPChartLib/electronicsystem.MPChartLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/electronicsystem.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/electronicsystem.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/baselibrary/electronicsystem.baselibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/baselibrary/electronicsystem.baselibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jumpboxlibrary/electronicsystem.jumpboxlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/jumpboxlibrary/electronicsystem.jumpboxlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rainsystem/electronicsystem.rainsystem.iml" filepath="$PROJECT_DIR$/.idea/modules/rainsystem/electronicsystem.rainsystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/riversystem/electronicsystem.riversystem.iml" filepath="$PROJECT_DIR$/.idea/modules/riversystem/electronicsystem.riversystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ximageSelector/electronicsystem.ximageSelector.iml" filepath="$PROJECT_DIR$/.idea/modules/ximageSelector/electronicsystem.ximageSelector.iml" />
+    </modules>
+  </component>
+</project>

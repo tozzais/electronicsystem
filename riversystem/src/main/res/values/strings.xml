@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">河道管理</string>
+
+    <!--现场评估-->
+    <string name="activity_regulation_assessment">现场评价</string>
+    <string name="activity_regulation_pleaseChoose">请选择</string>
+    <string name="activity_regulation_describe">请输入现场情况描述</string>
+    <string name="activity_regulation_suggest">请留下你的建议</string>
+    <string name="activity_regulation_upload_image">上传图片</string>
+    <string name="activity_regulation_community_title">市管河道：黄浦江(基本信息)</string>
+    <!--整治更新-->
+    <string name="activity_regulation_case">整治情况</string>
+    <string name="activity_regulation_effect">整治效果</string>
+    <string name="activity_regulation_finish_time">整治完成时间</string>
+    <string name="activity_regulation_note">请输入整治信息备注</string>
+    <string name="activity_regulation_community_title1">市管河道：黄浦江(整治信息)</string>
+    <!--河道外层布局-->
+    <string name="activity_main_basic_info">基本信息</string>
+    <string name="activity_main_regulation_info">整治信息</string>
+    <string name="activity_main_gis_info">GIS地图</string>
+    <string name="activity_main_statistics_info">统计</string>
+    <string name="activity_main_inquiry_info">消息查询</string>
+
+    <!--河道基本信息-->
+    <string name="item_basic_town_name">七宝镇</string>
+    <string name="item_basic_river_name">市管河道：黄浦江（MH1001）</string>
+    <string name="item_basic_control">纳入水面积控制：是</string>
+    <string name="item_basic_length">长度：25642m</string>
+    <string name="item_basic_flow_town">流经街镇：</string>
+    <string name="item_basic_cross">是否跨镇：是</string>
+    <string name="item_basic_shrink">汇入河道：长江</string>
+    <string name="item_basic_area">面积：23345㎡</string>
+    <string name="item_basic_pump_name">泵闸名称：淀东泵闸</string>
+    <string name="item_basic_remarks">备注:备注</string>
+    <string name="item_basic_look_pic">查看图片</string>
+
+    <!--河道消息查询-->
+    <string name="item_inquire_channel">河道：黄浦江</string>
+    <string name="item_inquire_content">内容：超时报警</string>
+    <string name="item_inquire_time">时间：2018-01-23       11：30</string>
+
+    <!--河道整治信息-->
+    <string name="item_regulation_content">整治内容：综合整治(长度:234m)</string>
+    <string name="item_regulation_condition">整治情况：正在改造</string>
+    <string name="item_regulation_times">整治次数：1次</string>
+    <string name="item_regulation_finish_time">整治完成时间：2019/09/28</string>
+    <string name="item_regulation_project">整治项目：</string>
+    <string name="item_regulation_start_point">起始位置：</string>
+    <string name="item_regulation_plan">整治计划：</string>
+    <string name="item_regulation_start_time">开工时间：2018/08/06</string>
+    <string name="item_regulation_finish_time1">计划完成时间：2019/02/03</string>
+    <string name="item_regulation_case">现场情况描述：现场情况现场情况现场情况现场情况</string>
+    <string name="item_regulation_advice">建议：意见建议意见建议意见建议意见建议意</string>
+    <string name="item_regulation_delete">信息更新</string>
+    <string name="item_regulation_note">备注：备注</string>
+
+    <!--河道Gis信息-->
+    <string name="fragment_gis_where">去这里</string>
+    <string name="fragment_gis_community">(小区信息)</string>
+
+    <!--河道Gis基本信息-->
+    <string name="fragment_gis_basic_flow_town">流经街镇：莘庄浦江镇</string>
+    <string name="fragment_gis_basic_over_town">是否跨镇：是</string>
+    <string name="fragment_gis_basic_belong_town">所属街镇：闵行区七宝镇</string>
+    <string name="fragment_gis_basic_shrink_river">汇入河道：长江</string>
+
+    <!--河道Gis整治信息-->
+    <string name="fragment_gis_regulation_schedule">整治进度：</string>
+    <string name="fragment_gis_regulation_content">整治内容：</string>
+
+    <!--河道统计信息-->
+    <string name="item_statistical_town_name">闵行区</string>
+    <string name="item_statistical_times">历年整治总数</string>
+    <string name="item_statistical_water_times">水体总数</string>
+    <string name="item_statistical_channel_times">河道总数</string>
+    <string name="item_statistical_city_channel">市管河道</string>
+    <string name="item_statistical_area_channel">区管河道</string>
+    <string name="item_statistical_town_channel">镇管河道</string>
+    <string name="item_statistical_village_channel">村级河道</string>
+    <string name="item_statistical_plan_times">计划整治总数</string>
+    <string name="item_statistical_regulation_now">正在整治</string>
+    <string name="item_statistical_regulation_finish">完成整治</string>
+    <string name="item_statistical_regulation_plan">计划整治</string>
+    <string name="item_statistical_good">无需改造</string>
+    <string name="item_statistical_sum">综合整治</string>
+    <string name="item_statistical_adjust">水系调整</string>
+    <string name="item_statistical_dredge">清淤疏浚</string>
+
+</resources>

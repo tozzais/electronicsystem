@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="16sp"
+            android:textColor="@color/title_textcolor"
+            android:textStyle="bold"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/item_basic_town_name"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_channel"
+                android:textSize="14sp"
+                android:textColor="@color/title_textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_inquire_channel"
+                />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:textSize="14sp"
+                android:textColor="@color/title_textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_inquire_content"
+                />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:textSize="14sp"
+                android:textColor="@color/title_textcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_inquire_time"
+                />
+        </LinearLayout>
+    </LinearLayout>
+     <View
+         style="@style/horizontal_space"/>
+</LinearLayout>

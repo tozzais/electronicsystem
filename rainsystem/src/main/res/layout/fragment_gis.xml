@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <com.esri.arcgisruntime.mapping.view.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+         />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+        <include layout="@layout/rain_gis_legend"
+            />
+
+        <ImageView
+            android:id="@+id/iv_legend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/legend_btn"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/bottom_gis"
+        />
+
+
+    <com.gaocheng.baselibrary.widget.GisHeaderView
+        android:id="@+id/gis_header_view"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+    </com.gaocheng.baselibrary.widget.GisHeaderView>
+
+
+
+
+</RelativeLayout>
+
+

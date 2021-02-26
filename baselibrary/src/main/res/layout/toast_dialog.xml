@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/toast_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_toast_background"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:minWidth="180dp"
+        android:maxWidth="300dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="很抱歉,您的账号不支持核销功能"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>

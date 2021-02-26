@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">电子系统</string>
+
+
+
+
+    <string name="behavior_sample_title">com.gaocheng.electronicsystem.widget.behavior.SampleTitleBehavior</string>
+    <string name="behavior_sample_header">com.gaocheng.electronicsystem.widget.behavior.SampleHeaderBehavior</string>
+    <string name="behavior_recyclerview">com.gaocheng.electronicsystem.widget.behavior.RecyclerViewBehavior</string>
+
+
+</resources>

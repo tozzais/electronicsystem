@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/ll_onsite_assessment"
+        android:visibility="gone"
+        style="@style/ll_style">
+
+        <TextView
+            style="@style/ll_title_text_style"
+            android:text="现场评价" />
+
+        <TextView
+            android:id="@+id/tv_onsite_assessment"
+            style="@style/ll_content_text_style"
+            android:text="请选择" />
+
+        <ImageView style="@style/ll_image_style" />
+
+    </LinearLayout>
+
+
+
+    <View style="@style/line"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/tv_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="请输入现场情况描述"
+        android:textSize="14sp"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="8dp"
+        android:minHeight="60dp"
+        android:gravity="top"
+        />
+
+    <View style="@style/line" />
+
+    <EditText
+        android:id="@+id/tv_suggest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="请留下你的建议"
+        android:textSize="14sp"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="8dp"
+        android:minHeight="60dp"
+        android:gravity="top"
+        />
+
+    <View style="@style/line" />
+
+    <TextView
+        style="@style/ll_content_text_style"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:text="上传图片" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <include layout="@layout/layout_bottom_detail"></include>
+
+</LinearLayout>
+
+

@@ -1,0 +1,22 @@
+<resources>
+
+    <dimen name="detail_img_height">384dp</dimen>
+    <dimen name="base_text_size">15sp</dimen>
+
+    <!--整治柱形图的文字大小-->
+    <dimen name="remediation_column_text_size">12sp</dimen>
+    <!--统计图文字的大小-->
+    <dimen name="chart_text_size">10sp</dimen>
+    <!--统计历史记录水平柱形图的最大长度-->
+    <dimen name="history_max_lenght">280dp</dimen>
+
+
+    <dimen name="rain_statical_trans">340dp</dimen>
+    <dimen name="rain_statical_subject">200dp</dimen>
+    <dimen name="rain_statical_home">200dp</dimen>
+    <dimen name="river_statical_situation">278dp</dimen>
+    <dimen name="river_statical_manage_level">350dp</dimen>
+    <dimen name="statical_history">150dp</dimen>
+    <dimen name="rian_basic_message">95dp</dimen>
+    <dimen name="rian_trans">95dp</dimen>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">雨污管理</string>
+
+    <string name="sellHigh">"GIS"</string>
+    <string name="newCart">"信息"</string>
+    <string name="secondCart">"雨污"</string>
+    <string name="mine">"统计"</string>
+    <string name="loading">"加载中..."</string>
+</resources>

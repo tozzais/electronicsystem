@@ -1,0 +1,15 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+# Project exclude paths
+/baselibrary/build/
+/baselibrary/build/intermediates/javac/debug/classes/
+/riversystem/build/
+/riversystem/build/intermediates/javac/debug/classes/

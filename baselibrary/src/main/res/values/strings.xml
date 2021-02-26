@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">BaseLibrary</string>
+
+    <string name="sure">"确认"</string>
+    <string name="cancel">"取消"</string>
+    <string name="setting">"设置"</string>
+    <string name="loading_error">"加载失败，请重试"</string>
+
+    <string name="error_net">"无网络"</string>
+    <string name="error_timeout">"连接超时"</string>
+    <string name="error_syntax">"解析数据出错"</string>
+    <string name="error_http">"服务器连接错误"</string>
+    <string name="data_empey">"暂无数据"</string>
+    
+    <string-array name="trans_situation">
+        <item>无需改造</item>
+        <item>完成改造</item>
+        <item>计划改造</item>
+        <item>正在改造</item>
+        <item>未计划</item>
+    </string-array>
+    <string-array name="year">
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+    </string-array>
+    <string-array name="home_type">
+        <item>公寓</item>
+        <item>别墅</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="mixing">
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+    <string-array name="beautiful_home">
+        <item>完成改造</item>
+        <item>计划改造</item>
+        <item>正在改造</item>
+        <item>未计划</item>
+    </string-array>
+</resources>
