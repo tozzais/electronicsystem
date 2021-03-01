@@ -7,13 +7,14 @@ import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.appcompat.app.AlertDialog;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
@@ -89,6 +90,7 @@ public class RiverMainActivity extends BaseActivity {
     }
     @Override
     public void initView(Bundle savedInstanceState) {
+
         fragmentManager = getSupportFragmentManager();
         if (savedInstanceState != null){
 
@@ -103,6 +105,8 @@ public class RiverMainActivity extends BaseActivity {
 
 //        selectFragment(GIS);
         selectFragment(BASIC_INFO);
+        //影藏掉切换按钮
+        tvLeftTitle.setVisibility(View.GONE);
 
     }
     @Override
