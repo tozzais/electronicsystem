@@ -230,7 +230,7 @@ public class RiverMainActivity extends BaseActivity {
                 mHeaderView.setVisibility(View.VISIBLE);
                 setNotBackTitle("河道基本信息");
                 tvLeftTitle.setText("切换");
-                tvLeftTitle.setVisibility(View.VISIBLE);
+                tvLeftTitle.setVisibility(View.GONE);
                 setTabChecked(0);
                 setTabSelection(0);
                 break;
@@ -239,7 +239,7 @@ public class RiverMainActivity extends BaseActivity {
                 mHeaderView.setVisibility(View.VISIBLE);
                 setNotBackTitle("河道整治信息");
                 tvLeftTitle.setText("切换");
-                tvLeftTitle.setVisibility(View.VISIBLE);
+                tvLeftTitle.setVisibility(View.GONE);
                 setTabChecked(1);
                 setTabSelection(1);
                 break;

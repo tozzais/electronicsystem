@@ -43,6 +43,7 @@
             </intent-filter>
 
         </activity>
+        <activity android:name=".LoginActivity"/>
 
         <meta-data android:name="android.max_aspect" android:value="2.1" />
 

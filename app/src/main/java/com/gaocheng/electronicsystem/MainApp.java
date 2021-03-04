@@ -7,8 +7,6 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.alibaba.android.arouter.launcher.ARouter;
-import com.gaocheng.baselibrary.global.RouthConstant;
 import com.gaocheng.rainsystem.RainMainActivity;
 import com.gaocheng.riversystem.RiverMainActivity;
 
@@ -24,7 +22,7 @@ public class MainApp extends AppCompatActivity {
 //            // 1. 应用内简单的跳转(通过URL跳转在'进阶用法'中)
 //            ARouter.getInstance().build(RouthConstant.RAIN).navigation();
 //        }else {
-            ARouter.getInstance().build(RouthConstant.RIVER).navigation();
+            LoginActivity.launch(MainApp.this);
 //        }
         finish();
     }
